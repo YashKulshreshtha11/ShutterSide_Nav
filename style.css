@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+
+.main_box{
+    background: url(camera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.btn_one i{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.slidebar_menu{
+    position: fixed;
+    left: -350px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(78, 71, 71, 0.545);
+    box-shadow: 0 0 8px rgba(233, 228, 228, 0.861);
+    transition: all 0.3s linear;
+} 
+.slidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 0 6px rgba(233, 228, 228, 0.861); 
+    height: 60px;
+    letter-spacing: 2px;
+}
+.slidebar_menu .logo a{
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.slidebar_menu .btn_two i{
+    color: grey;
+    font-size: 20px;
+    line-height: 60px;
+    position: absolute;
+    left: 270px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+}
+.slidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+   
+.slidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 14px 25px;
+ }
+ .slidebar_menu .menu i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+ }
+ .slidebar_menu .menu i{
+    padding-right: 8px;
+ }
+
+ .slidebar_menu .social_media{
+    position: absolute;
+    left: 30%;
+    bottom: 50px;
+ }
+ .slidebar_menu .social_media i{
+    color: white;
+    opacity: 0.5;
+    padding-right: 10px;
+ }
+
+ #check{
+    display: none;
+ }
+
+ .slidebar_menu .menu li:hover{
+    box-shadow: 0 0 6px rgba(233, 228, 228, 0.861);
+ }
+
+ .btn_one i:hover{
+    font-size: 50px;
+ }
+
+ .btn_two i:hover{
+    font-size: 30px;
+ }
+
+ .slidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.2);
+ }
+
+ #check:checked ~ .slidebar_menu{
+    left: 0;
+ }
+ #check:checked ~ .btn_one i{
+    opacity: 0;
+ }
+ #check:checked ~ .slidebar_menu .btn_two i{
+    opacity: 1;
+ }
